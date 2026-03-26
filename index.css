@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Shared Styles for Service and Community Pages */
+@utility section-container {
+  @apply py-24 px-6;
+}
+
+@utility section-content {
+  @apply max-w-7xl mx-auto;
+}
+
+@utility section-heading {
+  @apply text-4xl font-bold text-[#033852] mb-8 text-left;
+}
+
+@utility section-subheading {
+  @apply text-xl text-zinc-600 leading-relaxed mb-12 text-left;
+}
+
+@utility card-base {
+  @apply bg-white rounded-3xl p-8 shadow-sm border border-zinc-100 transition-all hover:shadow-md;
+}
+
+@utility btn-primary {
+  @apply inline-flex items-center justify-center px-8 py-4 bg-[#033852] text-white rounded-full font-bold text-lg transition-all hover:bg-[#044a6b] hover:scale-105;
+}
+
+@utility btn-secondary {
+  @apply inline-flex items-center justify-center px-8 py-4 bg-white text-[#033852] border-2 border-[#033852] rounded-full font-bold text-lg transition-all hover:bg-zinc-50;
+}
+
+@utility img-wrapper {
+  @apply relative rounded-3xl overflow-hidden shadow-xl;
+}
+
+@utility h1-hero {
+  @apply text-5xl md:text-7xl font-bold text-white mb-6;
+}
+
+@utility h2-section {
+  @apply text-4xl font-bold text-[#033852] mb-8;
+}
+
+@utility h3-card {
+  @apply text-2xl font-bold text-[#033852] mb-4;
+}
+
+@utility p-body {
+  @apply text-lg text-zinc-600 leading-relaxed;
+}
